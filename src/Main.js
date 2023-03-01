@@ -9,9 +9,9 @@ export default function Main() {
                     <img src={Cover} alt="logo" className="header--logo" />
                     <h2 className="header--title">Hololive</h2>
                     <div className="nav-links">
-                        <h3>Home</h3>
-                        <h3>About us</h3>
-                        <h3>Contact</h3>
+                        <a href="#home">Home</a>
+                        <a href="#about">About us</a>
+                        <a href="#contact">Contact</a>
                     </div>
                 </div>
             </nav>
