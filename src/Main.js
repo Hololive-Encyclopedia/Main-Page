@@ -4,6 +4,7 @@ import Cover from "./image/cover.png";
 export default function Main() {
     return (
         <div className="main">
+
             <nav className="header">
                 <div className="navbar">
                     <img src={Cover} alt="logo" className="header--logo" />
@@ -17,7 +18,7 @@ export default function Main() {
             </nav>
 
             <h1 className="main--title">
-                Welcome to <br/> Hololive Encyclopedia
+                Welcome to <br /> Hololive Encyclopedia
             </h1>
         </div>
     );

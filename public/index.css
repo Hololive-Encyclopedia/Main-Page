@@ -1,76 +1,109 @@
-body{
+body {
     margin: 0;
     width: 100%;
     height: 100vh;
-    background-image: url("./components/gura.png");
-    
     background-repeat: no-repeat;
     background-size: cover;
+
+    /* animation */
+    transition: 5s;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
-.main{
+@keyframes animate {
+    0% {
+        background-image: url(./components/1.jpg);
+    }
+
+    20% {
+        background-image: url(./components/2.jpg);
+    }
+
+    40% {
+        background-image: url(./components/3.jpg);
+    }
+
+    60% {
+        background-image: url(./components/4.jpg);
+    }
+
+    80% {
+        background-image: url(./components/5.jpg);
+    }
+
+    100% {
+        background-image: url(./components/6.jpg);
+    }
+}
+
+.main {
     position: relative;
-    /* background-color: #ffffff; */
     width: 100%;
     height: 90vh;
 }
 
-.header{
-    display:flex;
-    align-items:center;
+.header {
+    display: flex;
+    align-items: center;
     background-color: transparent;
 }
 
-.header--logo{
-    width:3rem;
-    height:2rem;
-    /* margin-right:20px; */
-    /* margin-left:20px; */
+.header--logo {
+    width: 3rem;
+    height: 2rem;
     margin: 0.7rem 0.5rem 0.5rem 1rem;
 }
 
-.header--title{
-    width:80rem;
-    height:1rem;
+.header--title {
+    width: 80rem;
+    height: 1rem;
     font-family: 'Merienda One';
     font-style: normal;
     font-weight: 500;
     font-size: 1.5em;
-    /* margin-left: 0.5rem; */
     margin: 0 0rem 1rem 0.25rem;
-
 }
 
 .navbar {
     display: flex;
-    /* padding: 2rem 5rem; */
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 4rem;
-    /* background-color: #e1e1e1; */
     color: #000;
-  }
+}
 
 
-  .nav-links {
+.nav-links {
     font-family: 'Merienda One';
     font-style: normal;
     display: flex;
-    margin-right:2rem;
-  }
+    margin-right: 2rem;
+}
 
-.nav-links a{
+.nav-links a {
     margin: 1rem 1rem 1rem 1rem;
     font-size: 1.3em;
     color: #000000;
     font-weight: 400;
     text-decoration: none;
     white-space: nowrap;
-
 }
 
- .main--title{
+@font-face {
+    font-family: 'Rochester';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/rochester/v9/2udCkiDfnW4AaFjsnYhubw.woff2) format('woff2');
+}
+
+.main--title {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -79,14 +112,38 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Merienda One';
+    font-family: 'Rochester';
     font-style: normal;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 5em;
     line-height: 4rem;
-    color: #000000;
-    /* margin-top: 4rem; */
+    color: #ffffff;
     text-align: center;
 
+    /* animation */
+    background: linear-gradient(to right,#095fab 10%, #25abe8 50%, #57d75b 60%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: appear 2s ease forwards, textclip 1.5s linear infinite; 
+}
 
- }
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
