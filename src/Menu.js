@@ -6,7 +6,6 @@ export default function Menu(props) {
     function menubar(){
         return(
             console.log("menu clicked")
-
         )
     }
     return (
