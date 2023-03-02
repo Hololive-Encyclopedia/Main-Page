@@ -60,6 +60,13 @@ body {
     margin: 0.7rem 0.5rem 0.5rem 1rem;
 }
 
+.menu--icon{
+    width: 1rem;
+    height: 1rem;
+    margin: 0.7rem 45.5rem 0.3rem 0rem;
+}
+
+
 .header--title {
     width: 80rem;
     height: 1rem;

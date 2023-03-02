@@ -1,5 +1,6 @@
 import React from "react";
 import Cover from "./image/cover.png";
+import Menu from "./Menu";
 
 export default function Main() {
     return (
@@ -9,6 +10,7 @@ export default function Main() {
                 <div className="navbar">
                     <img src={Cover} alt="logo" className="header--logo" />
                     <h2 className="header--title">Hololive</h2>
+                    <Menu/>
                     <div className="nav-links">
                         <a href="#home">Home</a>
                         <a href="#about">About us</a>
