@@ -22,6 +22,10 @@ export default function Main() {
             <h1 className="main--title">
                 Welcome to <br /> Hololive Encyclopedia
             </h1>
+            <div className="down-button">
+                <i class='fa fa-chevron-circle-down'></i>
+            </div>
+
         </div>
     );
 }
