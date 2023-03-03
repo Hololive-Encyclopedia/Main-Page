@@ -170,7 +170,7 @@ body {
 }
 
 .menubar {
-    background-color: #000000;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     position: absolute;
@@ -186,9 +186,46 @@ body {
 }
 
 .menubar.is-active {
-    opacity: 0.5;
     visibility: visible;
     clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%);
+    animation: fadeIn 0.5s ease-in both;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 0.9;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.menu--title{
+    color:rgb(85, 0, 255);
+    opacity: 1;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Merienda One';
+    font-style: normal;
+    font-weight: 500;
+    align-items: flex-start;
+    margin: 0.5em 0rem 3em 2rem;
+}
+
+.menu--hint{
+    color:rgb(85, 0, 255);
+    opacity: 1;
+    position: absolute;
+    top: 1em;
+    font-family: 'Merienda One';
+    font-style: normal;
+    font-weight: 500;
+    align-items: flex-start;
+    margin: 0.5em 0rem 5em 16em;
 }
 
 
@@ -207,10 +244,11 @@ body {
     display: inline-flex;
     font-weight: bold;
     font-size: 1.5em;
-    color: #fff;
+    color: #ff0000;
     text-decoration: none;
     text-transform: uppercase;
 }
+
 
 .menu--link:after {
     content: "";
