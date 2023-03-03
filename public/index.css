@@ -142,7 +142,7 @@ body {
     text-align: center;
 
     /* animation */
-    background: linear-gradient(to right, #095fab 10%, #25abe8 50%, #57d75b 60%);
+    background: linear-gradient(to right, #ff9900 10%, #e00404 50%, #00f777 60%);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
@@ -183,27 +183,30 @@ body {
     transition: 0.3s;
     opacity: 0;
     visibility: hidden;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
 }
 
 .menubar.is-active {
     visibility: visible;
-    clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%);
+    /* clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%); */
     animation: fadeIn 0.5s ease-in both;
 }
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translate3d(0, -20%, 0);
-	}
-	to {
-		opacity: 0.9;
-		transform: translate3d(0, 0, 0);
-	}
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+
+    to {
+        opacity: 0.9;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
-.menu--title{
-    color:rgb(85, 0, 255);
+.menu--title {
+    color: rgb(85, 0, 255);
     opacity: 1;
     font-size: 2em;
     position: absolute;
@@ -216,8 +219,8 @@ body {
     margin: 0.5em 0rem 3em 2rem;
 }
 
-.menu--hint{
-    color:rgb(85, 0, 255);
+.menu--hint {
+    color: rgb(85, 0, 255);
     opacity: 1;
     position: absolute;
     top: 1em;
@@ -225,7 +228,7 @@ body {
     font-style: normal;
     font-weight: 500;
     align-items: flex-start;
-    margin: 0.5em 0rem 5em 16em;
+    margin: 0.5em 0rem 0em 16em;
 }
 
 
@@ -233,37 +236,62 @@ body {
     display: flex;
     flex-direction: column;
     list-style-type: none;
+    margin-top: 7em;
 }
 
+/* menu item 1~4 */
+
+
 .menu--item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 2.7em;
+}
+
+.menu--item {
+    margin-left: 1em;
+    float: left;
+}
+
+.JP2 {
+    display: inline;
 }
 
 .menu--link {
-    position: relative;
-    display: inline-flex;
+    position: absolute;
+    display: flex;
     font-weight: bold;
     font-size: 1.5em;
     color: #ff0000;
     text-decoration: none;
-    text-transform: uppercase;
+
+
+    /* margin: 0em 0em 0em 0.7em; */
+
 }
 
 
 .menu--link:after {
     content: "";
     position: absolute;
-    bottom: -10px;
-    width:0;
+    bottom: -0.1em;
+    width: 0;
     left: 0;
-    height:5px;
-    display:inline-flex;
+    height: 0.2em;
+    display: inline-flex;
     background: #c5e600;
-    transition:0.3s;
+    transition: 0.4s;
 }
 
 .menu--link:hover:after {
-    width:100%;
+    width: 100%;
+}
+
+.HoloJP {
+    position: absolute;
+    font-size: 1.5em;
+    font-family: 'Merienda One';
+    top: 0;
+    left: 0;
+    margin: 3em 0rem 0em 6em;
 }
 
 
@@ -282,6 +310,7 @@ body {
 
 
 .fa-chevron-circle-down {
-    font-size: 90px; /* 30 times larger than the default size of 3rem */
+    font-size: 4rem;
+    /* 30 times larger than the default size of 3rem */
     color: #000;
-  }
+}
