@@ -8,13 +8,6 @@ export default function Menu(props) {
         menu.classList.toggle("is-active");
     }
 
-
-// document.querySelector('menu--icon').onclick = function (e) {
-//     var menu = document.querySelector('menubar');
-
-//     menu.classList.toggle('is-active');
-//     e.preventDefault();
-// }
     return (
         <div className="menu">
             <img src={downbutton} alt="menu" className="menu--icon" onClick={menubar}/>
