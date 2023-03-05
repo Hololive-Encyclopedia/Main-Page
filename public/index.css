@@ -235,25 +235,32 @@ body {
 }
 
 .custom--list{
-    column-count: 3;
+    column-count: 2;
     column-gap: 40px;
 }
 
 .JPmenu {
-    display: flex;
+    display: flex, inline-block;
     flex-direction: column;
     list-style-type: none;
     margin-top:-1em;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 2.5px;
     /* background-color: skyblue; */
 }
 
 
 .JPmenu--item:not(:last-child) {
-    margin-bottom: 2.7em;
+    margin-bottom: 2em;
 }
 
 .JPmenu--item {
     margin-left: 1em;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    break-inside: avoid-column;
 }
 
 
