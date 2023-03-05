@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import downbutton from "./image/down.png";
+import downbutton from "../image/down.png";
 
 export default function Menu(props) {
     const menuRef = useRef(null);
