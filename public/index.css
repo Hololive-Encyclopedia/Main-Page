@@ -67,7 +67,7 @@ body {
     width: 1rem;
     height: 1rem;
     position: absolute;
-    top: 1rem;
+    top: 0rem;
     left: 10.5rem;
     font-size: 26px;
     /* margin: 0.7rem 0rem 0.7rem 0rem; */
@@ -357,7 +357,26 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    animation: bounce 1s ease-in-out infinite, ;
 }
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-0.5rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
 
 
 .fa-chevron-circle-down {
