@@ -22,7 +22,9 @@ export default function Landing() {
                 Welcome to <br /> Hololive Encyclopedia
             </h1>
             <div className="down-button">
-                <i class='fa fa-chevron-circle-down'></i>
+                <a href="#intro">
+                    <i class='fa fa-chevron-circle-down'></i>
+                </a>
             </div>
         </div>
     );
