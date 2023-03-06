@@ -1,5 +1,4 @@
 /* intro page */
-
 .intro {
     position: relative;
     width: 100vw;
@@ -13,10 +12,9 @@
 
 .intro--title {
     position: absolute;
-    top: 2rem;
-    left: 15rem;
+    top: 1.5rem;
+    left: 11.5rem;
     z-index: 3;
-    /* transform: translate(-50%, -50%); */
     font-family: 'Merienda One';
     font-style: normal;
     font-weight: 500;
@@ -26,66 +24,51 @@
 
 .intro--title--square {
     position: absolute;
-    top: 2rem;
-    left: 11.5rem;
+    top: 1.5rem;
+    left: 7.5rem;
     z-index: 0;
-    width: 30rem;
-    height: 5rem;
+    width: 27rem;
+    height: 4.5rem;
     background-color: #e1ff00;
     z-index: 2;
-    /* border: 1px solid #000000; */
+    opacity: 0.5;
 }
 
-
-
 .cut-corner {
-  position: relative;
-  height: 100px;
-  width: 200px;
-  border-left: 2px solid black;
+  top:1.2rem;
+  left: 8.5rem;
+  position: absolute;
+  height: 4.5rem;
+  width: 27rem;
+  border-left: 0.15rem solid black;
   overflow: hidden;
+  z-index: 3;
+  opacity: 0.3;
 }
 .cut-corner:after,
 .cut-corner:before {
   position: absolute;
   content: '';
-  width: calc(100% - 2px);
+  width: calc(100% - 1rem);
   left: 0px;
-  z-index: 1;
 }
 .cut-corner:before {
   height: 20%;
   top: 0px;
   border: 2px solid black;
-  border-width: 2px 3px 0px 0px;
-  transform: skew(45deg);
+  border-width: 0.15em 0.3em 0em 0em;
+  transform: skew(70deg);
   transform-origin: right bottom;
 }
 .cut-corner:after {
-  height: calc(80% - 4px);
-  bottom: 0px;
+  height: calc(80% - 0.2em);
+  bottom: 0em;
   border: 2px solid black;
-  border-width: 0px 2px 2px 0px;
+  border-width: 0em 0.15em 0.15em 0em;
 }
 .filled:before, .filled:after {
   background-color: black;
 }
 
-/* Just for demo */
-
-.cut-corner {
-  float: left;
-  color: black;
-  padding: 10px;
-  transition: all 1s;
-  margin: 10px;
-}
-.cut-corner:hover {
-  height: 200px;
-  width: 300px;
-}
-.cut-corner.filled{
-  color: black;
-}
 
 
