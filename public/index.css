@@ -180,8 +180,8 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 7em;
-    padding: 100px;
+    bottom: 15em;
+    padding: 3em;
     z-index: 1;
     transition: 0.3s;
     opacity: 0;
@@ -192,7 +192,7 @@ body {
 
 .menubar.is-active {
     visibility: visible;
-    /* clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%); */
+
     animation: fadeIn 0.5s ease-in both;
 }
 
@@ -236,7 +236,7 @@ body {
 
 .custom--list{
     column-count: 2;
-    column-gap: 40px;
+    column-gap: 3em;
 }
 
 .JPmenu {
@@ -246,7 +246,7 @@ body {
     margin-top:-1em;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 2.5px;
+    margin-top: 0.5em;
     /* background-color: skyblue; */
 }
 
@@ -261,11 +261,6 @@ body {
     width: 100%;
     box-sizing: border-box;
     break-inside: avoid-column;
-}
-
-
-.JP2 {
-
 }
 
 .menu--link {
@@ -359,7 +354,7 @@ body {
     transform: translateX(-50%);
     width: 3rem;
     height: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -376,42 +371,3 @@ body {
 
 
 
-/* intro page */
-
-.intro {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.intro::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(https://i.ibb.co/0nQqZ3r/IMG-20210430-205444.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(5px);
-    z-index: -1;
-}
-
-.intro--text {
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Merienda One';
-    font-style: normal;
-    font-weight: 500;
-    margin: 0;
-}

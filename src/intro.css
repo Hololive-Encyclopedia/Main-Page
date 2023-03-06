@@ -1,0 +1,91 @@
+/* intro page */
+
+.intro {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.intro--title {
+    position: absolute;
+    top: 2rem;
+    left: 15rem;
+    z-index: 3;
+    /* transform: translate(-50%, -50%); */
+    font-family: 'Merienda One';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    color: #000000;
+}
+
+.intro--title--square {
+    position: absolute;
+    top: 2rem;
+    left: 11.5rem;
+    z-index: 0;
+    width: 30rem;
+    height: 5rem;
+    background-color: #e1ff00;
+    z-index: 2;
+    /* border: 1px solid #000000; */
+}
+
+
+
+.cut-corner {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  border-left: 2px solid black;
+  /* overflow: hidden; */
+}
+.cut-corner:after,
+.cut-corner:before {
+  position: absolute;
+  content: '';
+  width: calc(100% - 2px);
+  left: 0px;
+  z-index: -1;
+}
+.cut-corner:before {
+  height: 20%;
+  top: 0px;
+  border: 2px solid black;
+  border-width: 2px 3px 0px 0px;
+  transform: skew(45deg);
+  transform-origin: right bottom;
+}
+.cut-corner:after {
+  height: calc(80% - 4px);
+  bottom: 0px;
+  border: 2px solid black;
+  border-width: 0px 2px 2px 0px;
+}
+.filled:before, .filled:after {
+  background-color: black;
+}
+
+/* Just for demo */
+
+.cut-corner {
+  float: left;
+  color: black;
+  padding: 10px;
+  transition: all 1s;
+  margin: 10px;
+}
+.cut-corner:hover {
+  height: 200px;
+  width: 300px;
+}
+.cut-corner.filled{
+  color: black;
+}
+
+
