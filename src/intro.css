@@ -2,7 +2,7 @@
 
 .intro {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #ffffff;
     display: flex;
@@ -43,7 +43,7 @@
   height: 100px;
   width: 200px;
   border-left: 2px solid black;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .cut-corner:after,
 .cut-corner:before {
@@ -51,7 +51,7 @@
   content: '';
   width: calc(100% - 2px);
   left: 0px;
-  z-index: -1;
+  z-index: 1;
 }
 .cut-corner:before {
   height: 20%;
