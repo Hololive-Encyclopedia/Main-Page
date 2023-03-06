@@ -69,8 +69,9 @@ body {
     width: 1rem;
     height: 1rem;
     position: absolute;
-    top: 1.5rem;
-    left: 11.5rem;
+    top: 1rem;
+    left: 10.5rem;
+    font-size: 26px;
     /* margin: 0.7rem 0rem 0.7rem 0rem; */
 }
 
