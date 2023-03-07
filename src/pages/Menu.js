@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from "react";
-import downbutton from "../image/down.png";
 
 export default function Menu(props) {
     const menuRef = useRef(null);
@@ -22,7 +21,6 @@ export default function Menu(props) {
 
     return (
         <div className="menu">
-            {/* <img src={downbutton} alt="menu" className="menu--icon" onClick={toggleMenu} /> */}
             <div className="menu--icon" onClick={toggleMenu}>
                 <i class="fa fa-sort-down" ></i>
             </div>
