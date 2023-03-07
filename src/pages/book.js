@@ -30,7 +30,7 @@ export default function Book() {
                                                 <li>4</li>
                                                 <li>Follow : 
                                                     <ul>
-                                                        <li>Youtube Channel : </li>
+                                                        <li>Youtube Channel : <a href="https://www.youtube.com/@tanigox/featured">link</a></li>
                                                         <li>Twitter : </li>
                                                         <li>Instagram : </li>
                                                     </ul>
