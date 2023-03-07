@@ -122,12 +122,11 @@ body {
     color: #00ff88;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Rochester';
     font-style: normal;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/rochester/v9/2udCkiDfnW4AaFjsnYhubw.woff2) format('woff2');
-}
+} */
 
 .main--title {
     position: absolute;
@@ -141,7 +140,7 @@ body {
     font-family: 'Rochester';
     font-style: normal;
     font-weight: 400;
-    font-size: 10em;
+    font-size: 7em;
     /* font-size: 5em; */
     line-height: 10rem;
     text-align: center;

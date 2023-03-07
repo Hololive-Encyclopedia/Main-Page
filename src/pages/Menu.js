@@ -22,7 +22,7 @@ export default function Menu(props) {
     return (
         <div className="menu">
             <div className="menu--icon" onClick={toggleMenu}>
-                <i class="fa fa-sort-down" ></i>
+                <i className="fa fa-sort-down" ></i>
             </div>
             <div className="menubar" ref={menuRef}>
                 <h2 className="menu--title">Start Your Journey</h2>
