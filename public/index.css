@@ -357,8 +357,8 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    animation: bounce 1s ease-in-out infinite, ;
-}
+    animation: bounce 1s ease-in-out infinite;
+  }  
 
 @keyframes bounce {
     0% {
