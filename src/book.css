@@ -846,11 +846,8 @@ body .pages_page:nth-of-type(odd) .pages_page__inner {
 }
 
 body .pages_page:nth-of-type(1) .pages_page__inner {
-<<<<<<< HEAD
-    background-size: 31rem !important;
-=======
+    /* background-size: 31rem !important; */
     background-size: cover;
->>>>>>> acbd690210a32a4bf20c53d620e071c60238ae1e
     background-repeat: no-repeat !important;
     /* cover the whole page with image*/
 
