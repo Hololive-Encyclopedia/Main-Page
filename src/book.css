@@ -52,7 +52,8 @@ body .pagenumber {
     bottom: 20px;
     left: 34px;
     width: 400px;
-    color: var(--yellow);
+    /* color: var(--yellow); */
+    color: #ad6d00;
     letter-spacing: 60px;
 }
 
@@ -844,12 +845,17 @@ body .pages_page:nth-of-type(odd) .pages_page__inner {
 }
 
 body .pages_page:nth-of-type(1) .pages_page__inner {
+<<<<<<< HEAD
     background-size: 31rem !important;
+=======
+    background-size: cover;
+>>>>>>> acbd690210a32a4bf20c53d620e071c60238ae1e
     background-repeat: no-repeat !important;
     /* cover the whole page with image*/
 
     background-position: 0% 10% !important;
     background: url("./image/yagoo.jpg");
+
 }
 
 body .pages_page:nth-of-type(2) .pages_page__inner {
