@@ -1053,9 +1053,9 @@ body .pages_page__inner .control label {
 }
 
 body .pages_page__inner .control:after {
-    content: "\f105";
+    content: "<";
     display: block;
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 4 Free";
     font-weight: 900;
     color: var(--yellow);
     position: absolute;
@@ -1545,6 +1545,18 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
     line-height: 0.5em;
     white-space: pre;
     /* margin-top: -0.5em; */
+}
+
+@media screen and (max-width: 1536px) and (max-height: 800px){
+    .pages_page .pages_page__inner .content .introduction .intro-name{
+        font-size:3.5em;
+        font-weight: 300;
+        height: 0px;
+        text-align: center;
+        line-height: .5em;
+        white-space: pre;
+    }
+    
 }
 
 @media screen and (max-width: 1536px) and (max-height: 800px){
