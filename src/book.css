@@ -60,7 +60,8 @@ body .pagenumber {
 body .pagenumber:after {
     height: 1px;
     width: 100px;
-    background: var(--yellow);
+    /* background: var(--yellow); */
+    background: #ad6d00;
     content: "";
     display: block;
     position: absolute;
