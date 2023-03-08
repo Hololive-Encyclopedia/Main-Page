@@ -854,8 +854,8 @@ body .pages_page:nth-of-type(2) .pages_page__inner {
     background-size: 44rem !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    background: url("./image/lace.png");
-    background-color: white;
+    /* background: url("./image/lace.png"); */
+    /* background-color: rgb(255, 0, 0); */
     /* background: url("https://data.whicdn.com/images/86911589/original.jpg"); */
 }
 
@@ -1047,7 +1047,7 @@ body .pages_page__inner .control label {
 }
 
 body .pages_page__inner .control:after {
-    content: "";
+    content: "???";
     display: block;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -1090,7 +1090,7 @@ body .pages_page__inner .content {
     position: absolute;
     z-index: 1;
     pointer-events: none;
-    top: 0;
+    top: 0em;
     transform: translateZ(0px);
     width: 100%;
     height: 100%;
@@ -1260,13 +1260,13 @@ body .pages_page__inner .content_offset p {
 }
 
 body .pages_page__inner .content h1 {
-    font-size: 53px;
+    /* font-size: 53px; */
     color: var(--yellow);
     text-transform: uppercase;
-    padding: 120px;
+    padding: 70px;
     margin: 0;
     font-weight: normal;
-    letter-spacing: -6px;
+    /* letter-spacing: -6px; */
     line-height: 51px;
     transform-style: preserve-3d;
 }
@@ -1520,18 +1520,41 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
 
 
 .pages_page .pages_page__inner .content .introduction{
-    font-size:1.5em;
-    font-weight: 300;
-    line-height: 2em;
-    margin-left: 1em;
-    margin-bottom: 1em;
-    margin-top: 1em;
-
+    /* font-size:1.5em; */
+    /* font-weight: 300; */
+    /* line-height: 2em; */
+    height: 100%;
+    /* margin-left: 1em; */
+    /* margin-bottom: 1em; */
+    /* margin-top: 3em; */
+    /* background-color: #19f053; */
+    
 }
 
+.pages_page .pages_page__inner .content .introduction .intro-name{
+    font-size:3.5em;
+    font-weight: 300;
+    height: 0px;
+    text-align: center;
+    line-height: .5em;
+    white-space: pre;
+}
+
+.pages_page .pages_page__inner .content .introduction .intro-name span{
+    font-size:0.37em;
+    color: #896b00;
+    height: 10px;
+    text-align: center;
+}
+
+
 .pages_page .pages_page__inner .content .introduction .intro_list{
-    list-style: none;
+    /* list-style: none; */
     /* list-style-image: url('./image/cover.png'); */
+    margin-top: 2.5em;
+    margin-left: 4.3em;
+    margin-right: 3em;
+    font-size: 1.4em;
 }
 
 .youtube-link{

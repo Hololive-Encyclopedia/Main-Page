@@ -10,7 +10,7 @@ export default function Book() {
                         <input id='four' name='trigger' type='radio' />
                             <div className='pages_page'>
                                 <div className='pages_page__inner'>
-                                    <div className='logo'>Fashion</div>
+                                    {/* <div className='logo'>Fashion</div> */}
                                     <div className='pagenumber'>1 2</div>
                                     <div className='content'>
                                         <div className='content_center'>
@@ -23,8 +23,24 @@ export default function Book() {
                                 <div className='pages_page__inner'>
                                     <div className='content'>
                                         <div className='introduction'>
-                                            <ul className="intro_list">
-                                                <li>Name : Motoaki Tanigo</li>
+                                                <h1 className="intro-name">
+                                                    Motoaki&nbsp;Tanigo<br/>
+                                                    <span>- Also known as Yagoo and The best girl -</span>
+                                                </h1>
+                                            <div className="intro_list">
+                                                <p>He is the founder and CEO of COVER Corporation, <br/>
+                                                a Japanese company that produces virtual YouTubers <br/>
+                                                (VTubers) under the name Hololive Production. <br/>
+                                                Yagoo was recognized as one of Japan's Top 20 <br/>
+                                                Entrepreneurs by Forbes Japan in January 2022.</p>
+                                            </div>
+                                            <div className="intro_links">
+                                                <a href="https://www.youtube.com/@tanigox" className="youtube-link">
+                                                <i class="fa fa-youtube"></i>
+                                                </a>
+                                            </div>
+                                            {/* <ul className="intro_list">
+                                                <li >Motoaki Tanigo</li>
                                                 <li>Career : CEO of the Hololive</li>
                                                 <li>Nickname : Yagoo, the best girl</li>
                                                 <li>Follow : 
@@ -34,7 +50,7 @@ export default function Book() {
                                                         <li>Instagram : <a href="https://www.instagram.com/tanigox/" className="instagram-link">Click me</a></li>
                                                     </ul>
                                                 </li>
-                                            </ul>
+                                            </ul> */}
 
                                         </div>
                                         {/* <div className='content_center right'>
