@@ -1557,6 +1557,21 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
     font-size: 1.4em;
 }
 
+.pages_page .pages_page__inner .content .introduction .intro_links{
+    margin-top: 3em;
+    margin-left: 3.5em;
+    /* background-color: #fb00ff; */
+}
+
+.pages_page .pages_page__inner .content .introduction .intro_links a{
+    color: #ffb028;
+    text-decoration: none;
+    font-size: 3em;
+    margin-left: 1.5em;
+    /* background-color: #19f053; */
+}
+
+
 .youtube-link{
     pointer-events: all;
     text-decoration: none;
@@ -1566,6 +1581,11 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
     text-decoration: none;
 }
 .instagram-link{
+    pointer-events: all;
+    text-decoration: none;
+}
+
+.facebook-link{
     pointer-events: all;
     text-decoration: none;
 }

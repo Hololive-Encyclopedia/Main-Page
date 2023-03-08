@@ -36,7 +36,16 @@ export default function Book() {
                                             </div>
                                             <div className="intro_links">
                                                 <a href="https://www.youtube.com/@tanigox" className="youtube-link">
-                                                <i class="fa fa-youtube"></i>
+                                                    <i className="fa fa-youtube-play"></i>
+                                                </a>
+                                                <a href="https://twitter.com/tanigox" className="twitter-link">
+                                                    <i className="fa fa-twitter"></i>
+                                                </a>
+                                                <a href="https://www.instagram.com/tanigox/" className="instagram-link">
+                                                    <i className="fa fa-instagram"></i>
+                                                </a>
+                                                <a href="https://www.facebook.com/tanigo/" className="facebook-link">
+                                                    <i className="fa fa-facebook"></i>
                                                 </a>
                                             </div>
                                             {/* <ul className="intro_list">
