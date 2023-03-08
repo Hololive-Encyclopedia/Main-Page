@@ -844,9 +844,11 @@ body .pages_page:nth-of-type(odd) .pages_page__inner {
 }
 
 body .pages_page:nth-of-type(1) .pages_page__inner {
-    background-size: 37rem !important;
+    background-size: 31rem !important;
     background-repeat: no-repeat !important;
-    background-position: 100% 10% !important;
+    /* cover the whole page with image*/
+
+    background-position: 0% 10% !important;
     background: url("./image/yagoo.jpg");
 }
 
@@ -1532,12 +1534,13 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
 }
 
 .pages_page .pages_page__inner .content .introduction .intro-name{
-    font-size:3.5em;
+    font-size:3em;
     font-weight: 300;
     height: 0px;
     text-align: center;
-    line-height: .5em;
+    line-height: 0.5em;
     white-space: pre;
+    margin-top: -0.5em;
 }
 
 .pages_page .pages_page__inner .content .introduction .intro-name span{
@@ -1551,10 +1554,12 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
 .pages_page .pages_page__inner .content .introduction .intro_list{
     /* list-style: none; */
     /* list-style-image: url('./image/cover.png'); */
-    margin-top: 2.5em;
+    margin-top: 0em;
     margin-left: 4.3em;
-    margin-right: 3em;
-    font-size: 1.4em;
+    margin-right: 2.8em;
+    font-size: 1.3em;
+    margin-bottom: -2.6em;
+    line-height: 2.1em;
 }
 
 .pages_page .pages_page__inner .content .introduction .intro_links{
