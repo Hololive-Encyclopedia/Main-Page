@@ -32,10 +32,10 @@ export default function Book() {
                                                     <span>- Also known as Yagoo and The best girl -</span>
                                                 </h1>
                                             <div className="intro_list">
-                                                <p>He is the founder and CEO of COVER Corporation, <br/>
+                                                <p>    He is the founder and CEO of COVER Corporation, <br/>
                                                 a Japanese company that produces virtual YouTubers <br/>
-                                                (VTubers) under the name Hololive Production. <br/>
-                                                Yagoo was recognized as one of Japan's Top 20 <br/>
+                                                (VTubers) under the name Hololive Production. <br/></p>
+                                                <p>   Yagoo was also recognized as one of Japan's Top 20 <br/>
                                                 Entrepreneurs by Forbes Japan in January 2022.</p>
                                             </div>
                                             <div className="intro_links">
