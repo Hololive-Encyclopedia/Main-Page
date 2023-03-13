@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import Cover from "../image/cover.png";
 
 export default function Menu(props) {
     const menuRef = useRef(null);
@@ -57,13 +58,13 @@ export default function Menu(props) {
 
                 <ul className="ENmenu">
                     <h4 className="HoloEN">Holo EN</h4>
-                    <li className= "ENmenu--item">
+                    <li className="ENmenu--item">
                         <a href="#GEN0" className="menu--link">Myth</a>
                     </li>
-                    <li className= "ENmenu--item">
+                    <li className="ENmenu--item">
                         <a href="#GEN1" className="menu--link">Project:Hope</a>
                     </li>
-                    <li className= "ENmenu--item">
+                    <li className="ENmenu--item">
                         <a href="#GEN2" className="menu--link">Council</a>
                     </li>
                 </ul>
@@ -71,16 +72,19 @@ export default function Menu(props) {
 
                 <ul className="IDmenu">
                     <h4 className="HoloID">Holo ID</h4>
-                    <li className= "IDmenu--item">
+                    <li className="IDmenu--item">
                         <a href="#GEN0" className="menu--link">Area 15</a>
                     </li>
-                    <li className= "IDmenu--item">
+                    <li className="IDmenu--item">
                         <a href="#GEN1" className="menu--link">Holoro</a>
                     </li>
-                    <li className= "IDmenu--item">
+                    <li className="IDmenu--item">
                         <a href="#GEN2" className="menu--link">Holoh3roes</a>
                     </li>
                 </ul>
+                <div className="header--photo">
+                    <img src = {Cover} alt="cover" className="cover--image" />
+                </div>
             </div>
         </div>
     );

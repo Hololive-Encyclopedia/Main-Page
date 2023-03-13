@@ -38,6 +38,8 @@ body {
     height: 100vh;
     overflow-x: hidden;
     font-family: "Sree Krushnadevaraya", serif;
+    transition: width 0.3s ease;
+    transition: height 0.3s ease;
 }
 
 body .logo {
@@ -52,7 +54,7 @@ body .pagenumber {
     bottom: 20px;
     left: 34px;
     width: 400px;
-    /* color: var(--yellow); */
+    color: var(--yellow);
     color: #ad6d00;
     letter-spacing: 60px;
 }
@@ -60,7 +62,7 @@ body .pagenumber {
 body .pagenumber:after {
     height: 1px;
     width: 100px;
-    /* background: var(--yellow); */
+    background: var(--yellow);
     background: #ad6d00;
     content: "";
     display: block;
@@ -115,6 +117,7 @@ body .pages {
     box-shadow: 0 41px 38px -20px #0a3150;
     max-width: 1300px;
     max-height: 650px;
+
 }
 
 body .pages input {
@@ -846,23 +849,31 @@ body .pages_page:nth-of-type(odd) .pages_page__inner {
 }
 
 body .pages_page:nth-of-type(1) .pages_page__inner {
-<<<<<<< HEAD
-    background-size: 31rem !important;
-=======
-    background-size: cover;
->>>>>>> acbd690210a32a4bf20c53d620e071c60238ae1e
+    max-width: 100%;
+    max-height: 100%;
+    /* background-size: 31rem !important; */
+
+    /* background-size: cover; */
     background-repeat: no-repeat !important;
     /* cover the whole page with image*/
 
     background-position: 0% 10% !important;
-    background: url("./image/yagoo.jpg");
+    /* background: url("./image/yagoo.jpg"); */
 
 }
+
+@media screen and (max-width: 1280px) and (max-height:672px) {
+    body .pages_page:nth-of-type(1) .pages_page__inner {
+        background: url("./image/yagoo.jpg");
+    }
+}
+
 
 body .pages_page:nth-of-type(2) .pages_page__inner {
     background-size: 44rem !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
+    background-color: #4a5f5c;
     /* background: url("./image/lace.png"); */
     /* background-color: rgb(255, 0, 0); */
     /* background: url("https://data.whicdn.com/images/86911589/original.jpg"); */
@@ -874,16 +885,40 @@ body .pages_page:nth-of-type(2) .pages_page__inner h4 {
 }
 
 body .pages_page:nth-of-type(3) .pages_page__inner {
-    background-size: 43.5rem !important;
-    background: url("./image/JP_Gen0.jpg");
+    background-size: 38.5rem !important;
+    background: url("./image/AllJP.jpg");
     /* background: url("https://iso.500px.com/wp-content/uploads/2014/12/fashion_1.jpg"); */
     /* background-position: 0 0; */
     background-position: center;
-    background-repeat: no-repeat ;
-
+    background-repeat: no-repeat;
+    border-radius: 20%;
 }
 
-body .pages_page:nth-of-type(3) .pages_page__inner .content {
+/* body .pages_page:nth-of-type(3) .pages_page__inner .content {
+    -webkit-clip-path: polygon(0% 0%, 50% 0, 50% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 50% 0, 50% 100%, 0% 100%);
+    height: 100%;
+    transform-style: preserve-3d;
+    width: 200%;
+    position: absolute;
+} */
+
+body .pages_page:nth-of-type(6) .pages_page__inner {
+    background: #4a5f5c;
+}
+
+body .pages_page:nth-of-type(4) .pages_page__inner .content {
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 0%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%);
+    height: 100%;
+    width: 200%;
+    position: absolute;
+    left: -100%;
+    background-color: #4a5f5c;
+}
+
+/* move image to 5 and 6 page */
+body .pages_page:nth-of-type(5) .pages_page__inner .content {
     -webkit-clip-path: polygon(0% 0%, 50% 0, 50% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 50% 0, 50% 100%, 0% 100%);
     height: 100%;
@@ -892,12 +927,8 @@ body .pages_page:nth-of-type(3) .pages_page__inner .content {
     position: absolute;
 }
 
-body .pages_page:nth-of-type(6) .pages_page__inner {
-    background: #4a5f5c;
-}
-
-body .pages_page:nth-of-type(4) .pages_page__inner .content {
-    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%);
+body .pages_page:nth-of-type(6) .pages_page__inner .content {
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 0%);
     clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%);
     height: 100%;
     width: 200%;
@@ -905,26 +936,37 @@ body .pages_page:nth-of-type(4) .pages_page__inner .content {
     left: -100%;
 }
 
-body .pages_page:nth-of-type(4) .pages_page__inner .bg {
+/* --------------------------- */
+
+body .pages_page:nth-of-type(5) .pages_page__inner .bg {
+
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%);
     clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%);
     height: 100%;
     width: 200%;
-    position: relative;
-    background: url("https://iso.500px.com/wp-content/uploads/2014/12/fashion_1.jpg");
-    background-size: 1400px !important;
+    position: absolute;
+    /* background: url("./image/EN_Gen2.png"); */
+    background-size: 39.5rem !important;
+    background-position: right !important;
+    background-repeat: no-repeat !important;
     left: -100%;
+    border-radius: 20%;
 }
 
 body .pages_page:nth-of-type(5) .pages_page__inner {
-    background-color:white;
-    /* background: url("./image/yagoo.jpg"); */
-    background-size: 870px !important;
+    /* background-color: red; */
+    background: url("./image/EN_Gen0.png");
+
+    background-size: 39em !important;
+    background-repeat: no-repeat;
     background-position: center !important;
+
+    /* border-radius: 25%; */
 }
 
 body .pages_page:nth-of-type(7) .pages_page__inner {
-    background: url("http://ruthrose.co.uk/wp-content/uploads/2018/04/lingerie-fashion-photographer-photography-shoot-fitness-swimwear-shoot180317_POCKET9661-f1.jpg");
+    background-color: #4a5f5c;
+    /* background: url("http://ruthrose.co.uk/wp-content/uploads/2018/04/lingerie-fashion-photographer-photography-shoot-fitness-swimwear-shoot180317_POCKET9661-f1.jpg"); */
     background-position: 0 0;
     background-size: 1400px !important;
 }
@@ -933,9 +975,9 @@ body .pages_page:nth-of-type(7) .pages_page__inner .content_section {
     position: absolute;
 }
 
-body .pages_page:nth-of-type(7) .pages_page__inner .content_section h2 {
+/* body .pages_page:nth-of-type(7) .pages_page__inner .content_section h2 {
     margin: 0;
-}
+} */
 
 body .pages_page:nth-of-type(7) .pages_page__inner .content_section h2,
 body .pages_page:nth-of-type(7) .pages_page__inner .content_section p {
@@ -943,29 +985,30 @@ body .pages_page:nth-of-type(7) .pages_page__inner .content_section p {
     color: var(--yellow);
 }
 
-body .pages_page:nth-of-type(7) .pages_page__inner .content_section p {
-    line-height: 18px;
+/* body .pages_page:nth-of-type(7) .pages_page__inner .content_section p {
+    line-height: 1em;
     opacity: 0.95;
-    font-size: 13px;
-}
+    font-size: 1.5em;
+} */
 
-body .pages_page:nth-of-type(7) .pages_page__inner .content_section:nth-of-type(1) {
-    top: 100px;
-    width: 200px;
-}
+/* body .pages_page:nth-of-type(7) .pages_page__inner .content_section:nth-of-type(1) {
+    top: 4em;
+    width: 5em;
+} */
 
-body .pages_page:nth-of-type(7) .pages_page__inner .content_section:nth-of-type(2) {
+/* body .pages_page:nth-of-type(7) .pages_page__inner .content_section:nth-of-type(2) {
     top: 274px;
     width: 300px;
-}
+} */
 
 body .pages_page:nth-of-type(7) .pages_page__inner .content_section:nth-of-type(3) {
-    top: 410px;
-    width: 260px;
+    /* top: 410px; */
+    width: 29em;
+
 }
 
 body .pages_page:nth-of-type(8) .pages_page__inner {
-    background: url("http://ruthrose.co.uk/wp-content/uploads/2018/04/lingerie-fashion-photographer-photography-shoot-fitness-swimwear-shoot180317_POCKET9661-f1.jpg");
+    /* background: url("./image/yagoo.jpg"); */
     background-position: 0 0;
 }
 
@@ -984,9 +1027,16 @@ body .pages_page:nth-of-type(8) .pages_page__inner .bg {
     height: 100%;
     width: 200%;
     position: relative;
-    background: url("http://ruthrose.co.uk/wp-content/uploads/2018/04/lingerie-fashion-photographer-photography-shoot-fitness-swimwear-shoot180317_POCKET9661-f1.jpg");
-    background-size: 1400px !important;
-    left: -100%;
+    background: url("./image/ID_12.png");
+    /* background: url("http://ruthrose.co.uk/wp-content/uploads/2018/04/lingerie-fashion-photographer-photography-shoot-fitness-swimwear-shoot180317_POCKET9661-f1.jpg"); */
+    background-size: 39em !important;
+    background-position: right !important;
+    margin-left: 1em;
+    /* margin-right:-em; */
+    /* overflow-x: hidden; */
+    background-repeat: no-repeat;
+    left: -103%;
+    border-radius: 15%;
 }
 
 body .pages_page__inner {
@@ -994,11 +1044,13 @@ body .pages_page__inner {
     background-size: 100% !important;
     height: 100%;
     transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body .pages_page__inner .control {
     position: absolute;
-    z-index: 1;
+    z-index: 5;
     width: 31px;
     height: 31px;
     border: 1px solid var(--yellow);
@@ -1114,7 +1166,7 @@ body .pages_page__inner .content_centerimage {
     text-align: center;
     width: 60%;
     transform: translateY(-50%);
-    max-width: 300px;
+    /* max-width: 1000px; */
 }
 
 body .pages_page__inner .content_centerimage img {
@@ -1124,7 +1176,7 @@ body .pages_page__inner .content_centerimage img {
 body .pages_page__inner .content_center {
     position: absolute;
     text-align: center;
-    width: 260px;
+    width: 390px;
     right: -130px;
     padding-bottom: 10px;
     top: 50%;
@@ -1186,55 +1238,50 @@ body .pages_page__inner .content_picture {
     position: absolute;
     left: 50%;
     transform: translateX(-40px);
-    top: 294px;
+    top: 305px;
+
 }
 
 body .pages_page__inner .content_picture img {
-    width: 100%;
+    width: 90%;
     margin: 0;
     display: inline-block;
+    border-radius: 10%;
+    background-size: 0.1rem;
 }
 
 body .pages_page__inner .content_quote {
     position: absolute;
-    left: calc(50% + 250px);
-    bottom: 100px;
-    width: 200px;
+    left: calc(50% + 2rem);
+    bottom: 16em;
+    width: 45%;
+}
+
+body .pages_page__inner .content_quote h4 {
+    display: block;
+    color: var(--yellow);
+    font-size: 2.3em;
+    font-weight: normal;
+    line-height: 2rem;
+    margin-bottom: 9rem;
 }
 
 body .pages_page__inner .content_quote h5 span {
-    display: block;
-    color: var(--yellow);
-    font-size: 34px;
-    font-weight: normal;
-    line-height: 24px;
-}
-
-body .pages_page__inner .content_quote h5 span.name,
-body .pages_page__inner .content_quote h5 span.auth {
-    font-size: 13px;
-    opacity: 0.7;
-    margin: 22px 0 0 0;
-    position: Relative;
-    left: 140px;
-}
-
-body .pages_page__inner .content_quote h5 span.auth {
-    margin: -7px 0;
-}
-
-body .pages_page__inner .content_quote h5 span.quo {
     font-family: "Catamaran", sans-serif;
-    font-size: 80px;
+    font-size: 1.5em;
     position: absolute;
-    left: 195px;
-    top: 90px;
+    color: white;
+    left: 1em;
+    top: 7em;
+    width: 85%;
+    line-height: 3rem;
+    opacity: 0.8;
 }
 
 body .pages_page__inner .content_quote h5 span.quo:nth-of-type(1) i {
     transform: rotate(180deg);
-    left: -226px;
-    top: -100px;
+    left: -2em;
+    top: -1em;
     display: block;
     font-style: normal;
     position: relative;
@@ -1528,7 +1575,7 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
 
 
 
-.pages_page .pages_page__inner .content .introduction{
+.pages_page .pages_page__inner .content .introduction {
     /* font-size:1.5em; */
     /* font-weight: 300; */
     /* line-height: 2em; */
@@ -1537,11 +1584,11 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
     /* margin-bottom: 1em; */
     /* margin-top: 3em; */
     /* background-color: #19f053; */
-    
+
 }
 
-.pages_page .pages_page__inner .content .introduction .intro-name{
-    font-size:3em;
+.pages_page .pages_page__inner .content .introduction .intro-name {
+    font-size: 3em;
     font-weight: 300;
     height: 0px;
     text-align: center;
@@ -1550,15 +1597,15 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
     margin-top: -0.5em;
 }
 
-.pages_page .pages_page__inner .content .introduction .intro-name span{
-    font-size:0.37em;
-    color: #896b00;
+.pages_page .pages_page__inner .content .introduction .intro-name span {
+    font-size: 0.37em;
+    color: #b28b00;
     height: 10px;
     text-align: center;
 }
 
 
-.pages_page .pages_page__inner .content .introduction .intro_list{
+.pages_page .pages_page__inner .content .introduction .intro_list {
     /* list-style: none; */
     /* list-style-image: url('./image/cover.png'); */
     margin-top: 0em;
@@ -1567,15 +1614,17 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
     font-size: 1.3em;
     margin-bottom: -2.6em;
     line-height: 2.1em;
+    color: white;
+    opacity: 0.8;
 }
 
-.pages_page .pages_page__inner .content .introduction .intro_links{
+.pages_page .pages_page__inner .content .introduction .intro_links {
     margin-top: 3em;
     margin-left: 3.5em;
     /* background-color: #fb00ff; */
 }
 
-.pages_page .pages_page__inner .content .introduction .intro_links a{
+.pages_page .pages_page__inner .content .introduction .intro_links a {
     color: #ffb028;
     text-decoration: none;
     font-size: 3em;
@@ -1584,20 +1633,77 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
 }
 
 
-.youtube-link{
-    pointer-events: all;
-    text-decoration: none;
-}
-.twitter-link{
-    pointer-events: all;
-    text-decoration: none;
-}
-.instagram-link{
+.youtube-link {
     pointer-events: all;
     text-decoration: none;
 }
 
-.facebook-link{
+.twitter-link {
     pointer-events: all;
     text-decoration: none;
+}
+
+.instagram-link {
+    pointer-events: all;
+    text-decoration: none;
+}
+
+.facebook-link {
+    pointer-events: all;
+    text-decoration: none;
+}
+
+.intro_myth {
+    margin-top: 0.3em;
+    margin-left: 5em;
+    margin-right: 2.8em;
+    line-height: 2.1em;
+    position: absolute;
+}
+
+.EN_intro_title {
+    color: var(--yellow);
+    font-size: 2.5em;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.1em;
+}
+
+.EN_intro {
+    font-size: 1.4em;
+    width: 90%;
+    /* margin-top: -0.3em; */
+    margin-top: 6em;
+    margin-left: 1.5em;
+    text-align: left;
+    color: white;
+    opacity: 0.7;
+}
+
+
+.EN_intro_extend {
+    margin-left: 9em;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: white;
+    opacity: 0.7;
+}
+
+.ID_intro_title {
+    position: absolute;
+    font-size: 2.3em;
+    font-weight: 700;
+    /* white-space: pre; */
+    top: 0em;
+    right: 3em;
+}
+
+.ID_intro {
+    /* position:absolute; */
+    font-size: 1.2em;
+    color: white;
+    opacity: 0.8;
+    margin-right: 1em;
+    margin-top: 3.5em;
+    line-height: 1.7em;
 }

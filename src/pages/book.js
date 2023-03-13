@@ -1,5 +1,8 @@
 import React from "react";
 import "../book.css";
+// import yagoo from "../image/yagoo.jpg";
+import IRyS from "../image/IRyS.jpg";
+// import All from "../image/full.jpg";
 
 export default function Book() {
     return (
@@ -10,6 +13,7 @@ export default function Book() {
                         <input id='four' name='trigger' type='radio' />
                             <div className='pages_page'>
                                 <div className='pages_page__inner'>
+                                    {/* <img src={yagoo}/> */}
                                     {/* <div className='logo'>Fashion</div> */}
                                     <div className='pagenumber'>1 2</div>
                                     <div className='content'>
@@ -80,14 +84,14 @@ export default function Book() {
                                         <label htmlFor='one'></label>
                                     </div>
                                     <div className='content'>
-                                        <div className='content_picture'>
-                                            <img src='https://i.pinimg.com/originals/1f/bc/f1/1fbcf1c55e839cd7b4aa28c4902669be.jpg' />
-                                        </div>
+                                        {/* <div className='content_picture'>
+                                            <img src={IRyS} />
+                                        </div> */}
                                         <div className='content_offset'>
-                                            <h2>Subtitle</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna, vitae eleifend velit. Donec dui turpis, viverra vitae lobortis commodo, lobortis et ex.</p>
+                                            {/* <h2>Subtitle</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna, vitae eleifend velit. Donec dui turpis, viverra vitae lobortis commodo, lobortis et ex.</p> */}
                                         </div>
-                                        <h1>
+                                        {/* <h1>
                                             <span>L</span>
                                             <span>o</span>
                                             <span>o</span>
@@ -128,7 +132,7 @@ export default function Book() {
                                                 <span>e</span>
                                                 <span>r</span>
                                                 <span>e</span>
-                                        </h1>
+                                        </h1> */}
                                     </div>
                                 </div>
                             </div>
@@ -151,20 +155,15 @@ export default function Book() {
                                     </div>
                                     <div className='content'>
                                         <div className='content_quote'>
+                                            <h4>The Origin of Hololive -- Holo JP</h4>
                                             <h5>
-                                                <span className='quo'>
-                                                    <i>"</i>
-                                                </span>
-                                                <span>This is a quote</span>
-                                                <span>from someone</span>
-                                                <span className='name'>Jamie Coulter</span>
-                                                <span className='auth'>- Jcoulterdesign</span>
-                                                <span className='quo'>"</span>
+                                                <span>Being able to dominate the V world is nothing more than the foundation created by the predecessors.<br />From unknown to well-known, these people have extraordinary strength of heart and seasoned performance experience.</span>
+                                                {/* <span></span> */}
                                             </h5>
                                         </div>
-                                        <div className='content_picture'>
-                                            <img src='https://i.pinimg.com/originals/1f/bc/f1/1fbcf1c55e839cd7b4aa28c4902669be.jpg' />
-                                        </div>
+                                        {/* <div className='content_picture'>
+                                            <img src={IRyS} />
+                                        </div> */}
                                         <h1>
                                             <span>L</span>
                                             <span>o</span>
@@ -215,6 +214,9 @@ export default function Book() {
                                     <div className='logo'>Fashion</div>
                                     <div className='pagenumber'>4 5</div>
                                     <div className='content'>
+                                        <div className='content_picture'>
+                                            <img src={IRyS} />
+                                        </div>
                                         <div className='content_center'>
                                             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
                                             <h6>Lorem ipsum dolor sit amet</h6>
@@ -232,14 +234,32 @@ export default function Book() {
                                         <div className='hamburger_part'></div>
                                         <div className='hamburger_part'></div>
                                     </div>
+                                    <div className="intro_myth">
+                                        <h1 className="EN_intro_title">
+                                            Legend of the Hololive<br/>
+                                            <span>- Myth -</span>
+                                        </h1>
+                                
+                                    </div>
+                                    <h5 className="EN_intro">
+                                    As the name suggests, each member of the group has unique skills, and they became popular in the entire V world when they debuted.
+                                    <br />
+                                    {/* <span>A shark, a detective, a priest, a grim reaper and a phoenix endear themselves to fans with their own charisma.</span> */}
+                                    </h5>
+                                    <div className="EN_intro_extend">
+                                        <span>Nowadays, they have created many miracles together in the V world.</span>
+                                    </div>
                                     <div className='control next'>
                                         <label htmlFor='four'></label>
                                     </div>
                                     <div className='bg'></div>
-                                    <div className='content_centerimage'>
-                                        <img src='https://www.slrlounge.com/wp-content/uploads/2017/09/2brittany-smith-rachelbw6911-800x533.jpg' />
-                                    </div>
+                                    {/* <div className='content_centerimage'>
+                                        <img src={All} />
+                                    </div> */}
                                     <div className='content'>
+                                        <div className='content_picture'>
+                                            <img src={IRyS} />
+                                        </div>
                                         <div className='content_center right'>
                                             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
                                             <h6>Lorem ipsum dolor sit amet</h6>
@@ -257,20 +277,15 @@ export default function Book() {
                                 <div className='pages_page__inner'>
                                     <div className='logo'>Fashion</div>
                                     <div className='pagenumber'>6 7</div>
-                                    <div className='content'>
-                                        <div className='content_section'>
-                                            <h2>Super</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna, vitae eleifend velit.</p>
-                                        </div>
-                                        <div className='content_section'>
-                                            <h2>Awesome</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna, vitae eleifend velit.</p>
-                                        </div>
-                                        <div className='content_section'>
-                                            <h2>Great</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna.</p>
+                                    {/* <div className='content'> */}
+                                    <div className='content_section'>
+                                        <div className="ID_intro">
+                                            <h2 className="ID_intro_title">Hololive Indonesia</h2>
+                                            <h4 className="ID_intro">Hololive is actively developing out and expanding the market, making more people see the charm of VTuber.<br />
+    Through VTuber's efforts and the company's publicity, as of 2023, the ID group had three generations, namely Area 15, Holoro and Holoh3roes.</h4>
                                         </div>
                                     </div>
+                                    {/* </div> */}
                                     <div className='control'>
                                         <label htmlFor='three'></label>
                                     </div>

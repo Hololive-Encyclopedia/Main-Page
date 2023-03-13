@@ -31,14 +31,13 @@ body {
 .main {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 38em;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
     /* filter: grayscale(5%); */
 
     /* animation */
-    transition: 10s;
     animation-name: animate;
     animation-direction: alternate-reverse;
     animation-play-state: running;
@@ -47,6 +46,20 @@ body {
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
+
+
+/* @media (max-width: 768px) {
+    .main {
+        height: 38px;
+    }
+} */
+
+/* adjust .main for larger screens */
+/* @media (min-width: 1024px) {
+    .main {
+        height: 38em;
+    }
+} */
 
 .header {
     display: flex;
@@ -240,25 +253,26 @@ body {
     margin: 0.5em 0rem 0em 16em;
 }
 
-.custom--list{
+.custom--list {
     column-count: 2;
     column-gap: 3em;
 }
 
 .JPmenu {
-    display: flex, inline-block;
+    display: flex;
+    /* display: inline-block; */
     flex-direction: column;
     list-style-type: none;
-    margin-top:-1em;
+    margin-top: -1em;
     width: 100%;
-    box-sizing: border-box;
-    margin-top: 0.5em;
+    /* box-sizing: border-box; */
+    margin-left: 0.25em;
     /* background-color: skyblue; */
 }
 
 
 .JPmenu--item:not(:last-child) {
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
 }
 
 .JPmenu--item {
@@ -304,7 +318,7 @@ body {
     margin: 3em 0rem 0em 6em;
 }
 
-.HoloEN{
+.HoloEN {
     position: absolute;
     font-size: 1.5em;
     font-family: 'Merienda One';
@@ -313,7 +327,7 @@ body {
     margin: 3em 0rem 0em 6em;
 }
 
-.HoloID{
+.HoloID {
     position: absolute;
     font-size: 1.5em;
     font-family: 'Merienda One';
@@ -322,8 +336,8 @@ body {
     margin: 3em 0rem 0em 6em;
 }
 
-.ENmenu--item{
-    margin-left: 12em;
+.ENmenu--item {
+    margin-left: 8.5em;
     margin-bottom: 4.9em;
 }
 
@@ -331,13 +345,15 @@ body {
     margin-bottom: 2.7em;
 }
 
-.ENmenu{
+.ENmenu {
+    margin-left: 0.25em;
+    margin-bottom: 1em;
     display: flex;
     flex-direction: column;
     list-style-type: none;
 }
 
-.IDmenu--item{
+.IDmenu--item {
     margin-left: 12.5em;
     margin-bottom: 4.9em;
 }
@@ -346,12 +362,11 @@ body {
     margin-bottom: 2.7em;
 }
 
-.IDmenu{
+.IDmenu {
     display: flex;
     flex-direction: column;
     list-style-type: none;
 }
-
 
 .down-button {
     position: absolute;
@@ -365,7 +380,7 @@ body {
     background-color: transparent;
     cursor: pointer;
     animation: bounce 1s ease-in-out infinite;
-  }  
+}
 
 @keyframes bounce {
     0% {
@@ -381,11 +396,6 @@ body {
     }
 }
 
-
-
-
-
-
 .fa-chevron-circle-down {
     font-size: 4rem;
     /* 30 times larger than the default size of 3rem */
@@ -396,7 +406,19 @@ body {
     /* -webkit-text-fill-color: transparent; */
 }
 
+.header--photo {
+    margin-left: 17em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: rotation 4s infinite linear;
+}
 
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg);
+    }
 
-
-
+    to {
+        transform: rotateY(360deg);
+    }
+}
