@@ -78,7 +78,7 @@ export default function Book() {
                             </div>
                             <div className='pages_page'>
                                 <div className='pages_page__inner'>
-                                    <div className='logo'>Fashion</div>
+                                    {/* <div className='logo'>Fashion</div> */}
                                     <div className='pagenumber'>2 3</div>
                                     <div className='control'>
                                         <label htmlFor='one'></label>
@@ -211,7 +211,7 @@ export default function Book() {
                             </div>
                             <div className='pages_page'>
                                 <div className='pages_page__inner'>
-                                    <div className='logo'>Fashion</div>
+                                    {/* <div className='logo'>Fashion</div> */}
                                     <div className='pagenumber'>4 5</div>
                                     <div className='content'>
                                         <div className='content_picture'>
@@ -275,7 +275,7 @@ export default function Book() {
                             </div>
                             <div className='pages_page'>
                                 <div className='pages_page__inner'>
-                                    <div className='logo'>Fashion</div>
+                                    {/* <div className='logo'>Fashion</div> */}
                                     <div className='pagenumber'>6 7</div>
                                     {/* <div className='content'> */}
                                     <div className='content_section'>
