@@ -1265,6 +1265,13 @@ body .pages_page__inner .content_quote {
     width: 45%;
 }
 
+@media screen and (max-width: 1600px) and (max-height: 754.6px){
+    body .pages_page__inner .content_quote {
+        /* center the text inside this  */
+        top: 5rem;
+    }
+}
+
 body .pages_page__inner .content_quote h4 {
     display: block;
     color: var(--yellow);

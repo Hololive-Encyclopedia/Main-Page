@@ -165,7 +165,7 @@ export default function Book() {
                                         {/* <div className='content_picture'>
                                             <img src={IRyS} />
                                         </div> */}
-                                        <h1>
+                                        {/* <h1>
                                             <span>L</span>
                                             <span>o</span>
                                             <span>o</span>
@@ -206,7 +206,7 @@ export default function Book() {
                                                 <span>e</span>
                                                 <span>r</span>
                                                 <span>e</span>
-                                        </h1>
+                                        </h1> */}
                                     </div>
                                 </div>
                             </div>
@@ -218,10 +218,10 @@ export default function Book() {
                                         <div className='content_picture'>
                                             <img src={IRyS} />
                                         </div>
-                                        <div className='content_center'>
+                                        {/* <div className='content_center'>
                                             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
                                             <h6>Lorem ipsum dolor sit amet</h6>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className='control'>
                                         <label htmlFor='two'></label>
@@ -266,12 +266,12 @@ export default function Book() {
                                             <h6>Lorem ipsum dolor sit amet</h6>
                                         </div>
                                     </div>
-                                    <div className='footer'>
+                                    {/* <div className='footer'>
                                         <i className="fab fa-google-plus-g"></i>
                                         <i className="fas fa-retweet"></i>
                                         <i className="far fa-heart"></i>
                                         <i className="far fa-share-square"></i>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className='pages_page'>
