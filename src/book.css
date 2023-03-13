@@ -55,7 +55,7 @@ body .pagenumber {
     left: 34px;
     width: 400px;
     color: var(--yellow);
-    color: #ad6d00;
+    color: #f2a92b;
     letter-spacing: 60px;
 }
 
@@ -63,7 +63,7 @@ body .pagenumber:after {
     height: 1px;
     width: 100px;
     background: var(--yellow);
-    background: #ad6d00;
+    background: #dc971e;
     content: "";
     display: block;
     position: absolute;
@@ -886,13 +886,20 @@ body .pages_page:nth-of-type(2) .pages_page__inner h4 {
 }
 
 body .pages_page:nth-of-type(3) .pages_page__inner {
-    background-size: 38.5rem !important;
-    background: url("./image/AllJP.jpg");
-    /* background: url("https://iso.500px.com/wp-content/uploads/2014/12/fashion_1.jpg"); */
-    /* background-position: 0 0; */
+    background: url("./image/AllJP.jpg"), #4a5f5c;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20%;
+    height: 85vh;
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 1280px) and (max-height:672px){
+    body .pages_page:nth-of-type(3) .pages_page__inner{
+        background-size: 38.5rem !important;
+    }
 }
 
 /* body .pages_page:nth-of-type(3) .pages_page__inner .content {
@@ -1598,18 +1605,6 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
     /* margin-top: -0.5em; */
 }
 
-
-@media screen and (max-width: 1536px) and (max-height: 800px){
-    .pages_page .pages_page__inner .content .introduction .intro-name{
-        font-size:3.5em;
-        font-weight: 300;
-        height: 0px;
-        text-align: center;
-        line-height: .5em;
-        white-space: pre;
-    }
-    
-}
 
 @media screen and (max-width: 1536px) and (max-height: 800px){
     .pages_page .pages_page__inner .content .introduction .intro-name{

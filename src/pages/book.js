@@ -138,6 +138,7 @@ export default function Book() {
                             </div>
                             <div className='pages_page'>
                                 <div className='pages_page__inner'>
+                                
                                     <div className='hamburger'>
                                         <div className='hamburger_part'></div>
                                         <div className='hamburger_part'></div>
@@ -148,10 +149,10 @@ export default function Book() {
                                     </div>
                                     <div className='bg'></div>
                                     <div className='footer'>
-                                        <i className="fab fa-google-plus-g"></i>
+                                        {/* <i className="fab fa-google-plus-g"></i>
                                         <i className="fas fa-retweet"></i>
                                         <i className="far fa-heart"></i>
-                                        <i className="far fa-share-square"></i>
+                                        <i className="far fa-share-square"></i> */}
                                     </div>
                                     <div className='content'>
                                         <div className='content_quote'>
