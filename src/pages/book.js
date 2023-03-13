@@ -28,7 +28,7 @@ export default function Book() {
                                     <div className='content'>
                                         <div className='introduction'>
                                                 <h1 className="intro-name">
-                                                    Motoaki&nbsp;Tanigo<br/>
+                                                    Motoaki Tanigo<br/>
                                                     <span>- Also known as Yagoo and The best girl -</span>
                                                 </h1>
                                             <div className="intro_list">
