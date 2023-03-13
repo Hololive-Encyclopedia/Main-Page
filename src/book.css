@@ -1711,25 +1711,69 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
     line-height: 1.1em;
 }
 
-.EN_intro {
-    font-size: 1.4em;
-    width: 90%;
-    /* margin-top: -0.3em; */
-    margin-top: 6em;
-    margin-left: 1.5em;
-    text-align: left;
-    color: white;
-    opacity: 0.7;
+@media screen and (max-width: 1600px) and (max-height: 754.6px){
+    .EN_intro_title {
+        margin-top: 1.2em;
+        color: var(--yellow);
+        font-size: 3em;
+        font-weight: normal;
+        text-align: center;
+        line-height: 0.8em;
+    }
+
+    .EN_intro_title span{
+        color: #c39900;
+        font-size: 0.7em;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .EN_intro {
+        margin-top: 6.5em;
+        font-size: 1.4em;
+        width: 80%;
+        margin-left: 2.5em;
+        text-align: left;
+        color: rgb(255, 255, 255);
+        opacity: 0.8;
+    }
+    
+    
+    .EN_intro_extend {
+        margin-top: 0em;
+        margin-left: 9em;
+        font-size: 1.4em;
+        font-weight: 700;
+        color: white;
+        opacity: 0.7;
+    }
+    
+
 }
 
+@media screen and (max-width: 1280px) and (max-height:672px){
 
-.EN_intro_extend {
-    margin-left: 9em;
-    font-size: 1.4em;
-    font-weight: 700;
-    color: white;
-    opacity: 0.7;
+    .EN_intro {
+        font-size: 1.4em;
+        width: 90%;
+        /* margin-top: -0.3em; */
+        margin-top: 6em;
+        margin-left: 1.5em;
+        text-align: left;
+        color: white;
+        opacity: 0.7;
+    }
+    
+    
+    .EN_intro_extend {
+        margin-left: 9em;
+        font-size: 1.4em;
+        font-weight: 700;
+        color: white;
+        opacity: 0.7;
+    }
 }
+
 
 .ID_intro_title {
     position: absolute;
@@ -1748,4 +1792,26 @@ body .pages input[type=radio]:nth-of-type(4):checked+div+div+div+div+div+div {
     margin-right: 1em;
     margin-top: 3.5em;
     line-height: 1.7em;
+}
+
+
+@media screen and (max-width: 1600px) and (max-height: 754.6px){
+    .ID_intro_title {
+        position: absolute;
+        font-size: 2.3em;
+        font-weight: 700;
+        /* white-space: pre; */
+        top: 2em;
+        left: -2em;
+    }
+    
+    .ID_intro {
+        /* position:absolute; */
+        font-size: 1.2em;
+        color: white;
+        opacity: 0.8;
+        margin-left: -2em;
+        margin-top: 6.5em;
+        line-height: 1.7em;
+    }
 }

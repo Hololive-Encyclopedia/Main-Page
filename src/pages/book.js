@@ -244,7 +244,7 @@ export default function Book() {
                                     </div>
                                     <h5 className="EN_intro">
                                     As the name suggests, each member of the group has unique skills, and they became popular in the entire V world when they debuted.
-                                    <br />
+                                    {/* <br /> */}
                                     {/* <span>A shark, a detective, a priest, a grim reaper and a phoenix endear themselves to fans with their own charisma.</span> */}
                                     </h5>
                                     <div className="EN_intro_extend">
@@ -261,10 +261,10 @@ export default function Book() {
                                         <div className='content_picture'>
                                             <img src={IRyS} />
                                         </div>
-                                        <div className='content_center right'>
+                                        {/* <div className='content_center right'>
                                             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
                                             <h6>Lorem ipsum dolor sit amet</h6>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     {/* <div className='footer'>
                                         <i className="fab fa-google-plus-g"></i>
@@ -301,12 +301,12 @@ export default function Book() {
                                     </div>
                                     <div className='bg'></div>
                                     <div className='content'></div>
-                                    <div className='footer'>
+                                    {/* <div className='footer'>
                                         <i className="fab fa-google-plus-g"></i>
                                         <i className="fas fa-retweet"></i>
                                         <i className="far fa-heart"></i>
                                         <i className="far fa-share-square"></i>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
