@@ -891,7 +891,6 @@ body .pages_page:nth-of-type(3) .pages_page__inner {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20%;
-    height: 85vh;
     z-index: -1;
 }
 
