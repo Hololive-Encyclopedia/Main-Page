@@ -59,7 +59,7 @@ export default function Menu(props) {
                 <ul className="ENmenu">
                     <h4 className="HoloEN">Holo EN</h4>
                     <li className="ENmenu--item">
-                        <a href="#GEN0" className="menu--link">Myth</a>
+                        <a href="https://hololive-encyclopedia.github.io/Gawr-Gura" className="menu--link">Myth</a>
                     </li>
                     <li className="ENmenu--item">
                         <a href="#GEN1" className="menu--link">Project:Hope</a>
